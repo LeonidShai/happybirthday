@@ -21,7 +21,9 @@ void MainWindow::on_pushButton_quit_clicked()
 
 void MainWindow::on_pushButton_clearResult_clicked()
 {
-
+    _ui->label_name->clear();
+    _ui->label_surname->clear();
+    _ui->label_birthday->clear();
 }
 
 void MainWindow::on_pushButton_find_clicked()
@@ -36,5 +38,7 @@ void MainWindow::on_pushButton_remember_clicked()
 
 void MainWindow::on_pushButton_clearEdit_clicked()
 {
-
+    _ui->lineEdit_name->clear();
+    _ui->lineEdit_surname->clear();
+    _ui->lineEdit_birthday->clear();
 }
