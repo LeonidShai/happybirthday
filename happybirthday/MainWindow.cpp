@@ -31,7 +31,7 @@ void MainWindow::on_pushButton_find_clicked()
 
 }
 
-void MainWindow::on_pushButton_remember_clicked()
+void MainWindow::on_pushButton_save_clicked()
 {
 
 }

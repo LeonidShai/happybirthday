@@ -16,10 +16,15 @@ public:
     ~MainWindow();
 
 private slots:
+    // выход из программы
     void on_pushButton_quit_clicked();
+    // очистка результата поиска
     void on_pushButton_clearResult_clicked();
+    // поиск
     void on_pushButton_find_clicked();
-    void on_pushButton_remember_clicked();
+    // запомнить дату
+    void on_pushButton_save_clicked();
+    // очистка ввода
     void on_pushButton_clearEdit_clicked();
 
 private:
