@@ -111,3 +111,6 @@ compile_commands.json
 
 *.metadata*
 .user
+
+# database
+db/birth.db

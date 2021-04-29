@@ -3,12 +3,14 @@
 
 #include <QMainWindow>
 #include <Subject.h>
+#include <Mediator.h>
+#include <Component.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow, public Subject
+class MainWindow : public QMainWindow, public Mediator, public Subject
 {
     Q_OBJECT
 
@@ -20,9 +22,13 @@ private:
     Ui::MainWindow* _ui;
     Observer*       _observer;
     QString         _msg;
+    Component* _component;
 
     void setObserver(Observer* observer) override;
     void notify() override;
+
+    void setComponent(Component* component);
+    void Notify(BaseComponent *sender, QString event) const override;
 
 private slots:
     // выход из программы
