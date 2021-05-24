@@ -13,16 +13,6 @@ MainWindow::~MainWindow()
     delete _ui;
 }
 
-void MainWindow::setObserver(Observer* observer)
-{
-    _observer = observer;
-}
-
-void MainWindow::notify()
-{
-    _observer->update(_msg);
-}
-
 void MainWindow::setComponent(Component* component)
 {
     _component = component;
@@ -54,7 +44,6 @@ void MainWindow::on_pushButton_find_clicked()
 void MainWindow::on_pushButton_save_clicked()
 {
     _msg = _ui->lineEdit_name->text();
-    notify();
 }
 
 void MainWindow::on_pushButton_clearEdit_clicked()

@@ -11,17 +11,13 @@ CONFIG += c++11
 SOURCES += \
     Component.cpp \
     Mediator.cpp \
-    Subscriber.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
     Component.h \
     MainWindow.h \
-    Mediator.h \
-    Observer.h \
-    Subject.h \
-    Subscriber.h
+    Mediator.h
 
 FORMS += \
     MainWindow.ui
