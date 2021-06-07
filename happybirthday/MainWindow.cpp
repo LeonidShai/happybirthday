@@ -13,17 +13,6 @@ MainWindow::~MainWindow()
     delete _ui;
 }
 
-void MainWindow::setComponent(Component* component)
-{
-    _component = component;
-    _component->setMediator(this);
-}
-
-void MainWindow::Notify(BaseComponent *sender, QString event) const
-{
-
-}
-
 void MainWindow::on_pushButton_quit_clicked()
 {
     this->close();
