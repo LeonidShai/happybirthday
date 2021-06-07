@@ -10,7 +10,7 @@ DbManager::DbManager(QObject* parent):
 {
     open();
     if(m_isOpen){
-        search();
+        //search();
     }
 }
 
@@ -24,25 +24,25 @@ void DbManager::insert()
 
 }
 
-void DbManager::search()
+Friend DbManager::search(const Friend &ami)
 {
-    QString queryStr = "select name, surname, birth_date from birthday where name = 'Артем';";
+    QString queryStr = "select name, surname, birth_date"
+                       " from birthday where name = '" + ami.name() + "';";
     QSqlQuery query;
     query.prepare(queryStr);
 
-    QString name;
-    QString surname;
-    QString birth_date;
+    Friend amico;
 
     if(query.exec()){
         QSqlRecord rec = query.record();
         while(query.next()){
-            name = query.value(rec.indexOf("name")).toString();
-            surname = query.value(rec.indexOf("surname")).toString();
-            birth_date = query.value(rec.indexOf("birth_date")).toString();
+            amico.setName(query.value(rec.indexOf("name")).toString());
+            amico.setSurname(query.value(rec.indexOf("surname")).toString());
+            amico.setBirthDate(query.value(rec.indexOf("birth_date")).toString());
         }
-        qDebug() << name << " " << surname << " " << birth_date << Qt::endl;
+        qDebug() << amico.name() << " " << amico.surname() << " " << amico.birthDate() << Qt::endl;
     }
+    return amico;
 }
 
 bool DbManager::isOpen()

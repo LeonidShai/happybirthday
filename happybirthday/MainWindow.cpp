@@ -28,7 +28,19 @@ void MainWindow::on_pushButton_clearResult_clicked()
 
 void MainWindow::on_pushButton_search_clicked()
 {
+    Friend ami;
+    ami.setName(_ui->lineEdit_name->text());
+    ami.setSurname(_ui->lineEdit_surname->text());
+    ami.setBirthDate(_ui->lineEdit_birthday->text());
 
+    Friend amico;
+    amico = _dbManager->search(ami);
+
+    if(!amico.isEmpty()){
+        _ui->label_name->setText(amico.name());
+        _ui->label_surname->setText(amico.surname());
+        _ui->label_birthday->setText(amico.birthDate());
+    }
 }
 
 void MainWindow::on_pushButton_save_clicked()

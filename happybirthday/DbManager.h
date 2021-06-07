@@ -7,6 +7,8 @@
 #include <QSqlQuery>
 #include <QSqlRecord>
 
+#include <Friend.h>
+
 class DbManager : public QObject
 {
     Q_OBJECT
@@ -15,7 +17,7 @@ public:
     ~DbManager();
 
     void insert();
-    void search();
+    Friend search(const Friend &ami);
     bool isOpen();
 
 private:

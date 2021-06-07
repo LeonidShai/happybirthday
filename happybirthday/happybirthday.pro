@@ -10,11 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     DbManager.cpp \
+    Friend.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
     DbManager.h \
+    Friend.h \
     MainWindow.h
 
 FORMS += \
