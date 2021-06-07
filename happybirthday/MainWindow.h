@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include <DbManager.h>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -18,6 +20,7 @@ public:
 private:
     Ui::MainWindow* _ui;
     QString         _msg;
+    DbManager*      _dbManager;
 
 private slots:
     // выход из программы
@@ -25,7 +28,7 @@ private slots:
     // очистка результата поиска
     void on_pushButton_clearResult_clicked();
     // поиск
-    void on_pushButton_find_clicked();
+    void on_pushButton_search_clicked();
     // запомнить дату
     void on_pushButton_save_clicked();
     // очистка ввода

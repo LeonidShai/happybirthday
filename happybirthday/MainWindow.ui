@@ -38,7 +38,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Friends Birthdays</string>
+         <string>Дни рождения</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -69,19 +69,25 @@
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
-            <width>16777215</width>
+            <width>150</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
-           <string>Name:</string>
+           <string>Имя:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -111,23 +117,23 @@
          <widget class="QLabel" name="label_2">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>150</width>
             <height>0</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>16777215</width>
+            <width>150</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
-           <string>Surname:</string>
+           <string>Фамилия:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -155,13 +161,25 @@
        <layout class="QHBoxLayout" name="horizontalLayout_9">
         <item>
          <widget class="QLabel" name="label_7">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
-           <string>Birthday:</string>
+           <string>Дата рождения:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -188,7 +206,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QPushButton" name="pushButton_find">
+         <widget class="QPushButton" name="pushButton_search">
           <property name="minimumSize">
            <size>
             <width>100</width>
@@ -201,7 +219,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Find</string>
+           <string>поиск</string>
           </property>
          </widget>
         </item>
@@ -219,7 +237,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Save</string>
+           <string>сохранить</string>
           </property>
          </widget>
         </item>
@@ -250,7 +268,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Clear</string>
+           <string>очистить</string>
           </property>
          </widget>
         </item>
@@ -284,7 +302,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Result:</string>
+         <string>Результат поиска:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -304,23 +322,23 @@
          <widget class="QLabel" name="label_5">
           <property name="minimumSize">
            <size>
-            <width>100</width>
+            <width>150</width>
             <height>0</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>120</width>
+            <width>150</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
-           <string>Name:</string>
+           <string>Имя:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -344,7 +362,7 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
@@ -367,23 +385,23 @@
          <widget class="QLabel" name="label_6">
           <property name="minimumSize">
            <size>
-            <width>100</width>
+            <width>150</width>
             <height>0</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>120</width>
+            <width>150</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
-           <string>Surname:</string>
+           <string>Фамилия:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -401,7 +419,7 @@
          <widget class="QLabel" name="label_surname">
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
@@ -422,19 +440,25 @@
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
          <widget class="QLabel" name="label_8">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
-            <width>120</width>
+            <width>150</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
-           <string>Birthday:</string>
+           <string>Дата рождения:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -452,7 +476,7 @@
          <widget class="QLabel" name="label_birthday">
           <property name="font">
            <font>
-            <pointsize>17</pointsize>
+            <pointsize>15</pointsize>
            </font>
           </property>
           <property name="text">
@@ -485,7 +509,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Clear</string>
+           <string>очистить</string>
           </property>
          </widget>
         </item>
@@ -547,7 +571,7 @@
            </font>
           </property>
           <property name="text">
-           <string>quit</string>
+           <string>выход</string>
           </property>
          </widget>
         </item>

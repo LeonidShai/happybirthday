@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent):
     _ui(new Ui::MainWindow)
 {
     _ui->setupUi(this);
+    _dbManager = new DbManager;
 }
 
 MainWindow::~MainWindow()
@@ -25,7 +26,7 @@ void MainWindow::on_pushButton_clearResult_clicked()
     _ui->label_birthday->clear();
 }
 
-void MainWindow::on_pushButton_find_clicked()
+void MainWindow::on_pushButton_search_clicked()
 {
 
 }
