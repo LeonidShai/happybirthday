@@ -19,9 +19,20 @@ DbManager::~DbManager()
     m_db.close();
 }
 
-void DbManager::insert()
+void DbManager::insert(const Friend &ami)
 {
+    QString queryStr = "insert into birthday (name, surname, birth_date) "
+                       "values (:name, :surname, :birth_date)";
+    QSqlQuery query;
+    query.prepare(queryStr);
 
+    query.bindValue(":name", ami.name());
+    query.bindValue(":surname", ami.surname());
+    query.bindValue(":birth_date", ami.birthDate());
+
+    if(query.exec()){
+        qDebug() << "data insert into bd" << Qt::endl;
+    }
 }
 
 Friend DbManager::search(const Friend &ami)

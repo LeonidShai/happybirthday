@@ -16,7 +16,7 @@ public:
     explicit DbManager(QObject *parent = nullptr);
     ~DbManager();
 
-    void insert();
+    void insert(const Friend &ami);
     Friend search(const Friend &ami);
     bool isOpen();
 
